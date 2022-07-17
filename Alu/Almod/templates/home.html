@@ -1,0 +1,57 @@
+{% extends 'base.html'%}
+{% block title %}
+    home
+{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="column">
+        <h1 class="topnavheading" style="font-size:1.75rem;">RGUKT ALUMNI-PORTAL</h1>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-7 col-lg-4 mycol">
+        <div class="card d-flex mx-auto">
+            <div class="card-image">
+                <img class="img-fluid d-flex mx-auto" src="{{url_for('static',filename='images/kc-reddy.jpg')}}">
+            </div>
+            <div class="card-text">
+                <div class="card-title">Chancellor</div>
+                Nobody is bothered about an institution more than its alumni.Any institutions' alumni are key to its growth. We are focused on giving a global experience to our students.
+                
+            </div>
+            <div class="footer">
+                <span id="position">Chancellor of<a href="#"> RGUKT</a></span>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-7 col-lg-4 mycol">
+        <div class="card d-flex mx-auto">
+            <div class="card-image">
+                <img class="img-fluid d-flex mx-auto" src="{{url_for('static',filename='images/vice-chancellor.jpg')}}">
+            </div>
+            <div class="card-text">
+                <div class="card-title">Vice-Chancellor</div>
+                An institution of higher education is a partnership among students and alumni, faculty and administrators, donors and trustees, neighborhoods and more, to build a community. 
+            </div>
+            <div class="footer">
+                <span id="position">Vice-Chancellor of <a href="#"> RGUKT</a></span>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-7 col-lg-4 mycol">
+        <div class="card d-flex mx-auto ">
+            <div class="card-image">
+                <img class="img-fluid d-flex mx-auto" src="{{url_for('static',filename='images/jayaramdir.jpg')}}">
+            </div>
+            <div class="card-text">
+                <div class="card-title">Director</div>
+                A founder can carry an institution only so far, and then others have to step in, even the alumni. That's how an institution becomes one in unity and raises is wisdom.
+            </div>
+            <div class="footer">
+                <span id="position">Director of<a href="#"> RGUKT</a></span>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %} 

@@ -1,0 +1,51 @@
+{% extends 'base.html'%}
+{% block title %}
+    forgot_password
+{% endblock %}
+
+{% block content %}
+
+  <div class="row v-email">
+        <div class="container d-flex justify-content-center align-items-center">
+            
+          <div class="row">       
+            <div class="col-md-6 login-form">
+                <div class="login_form_in">
+                    
+                  <h1 class="auth_title">forgot password</h1>
+                  <form>
+                    <div class="alert alert-success bg-soft-primary border-0" role="alert">
+                        Enter your email address and we'll send you an email with instructions to reset your password.
+                    </div>                    
+                    <div class="form-group">
+                      <input type="email" class="form-control" name="email" placeholder="Email Address">
+                    </div>
+                    <div class="form-group">
+                      <button type="button" class="btn btn-primary btn-lg btn-block verify">Veriry</button>
+                    </div>
+                    <div class="form-group other_auth_links">
+                        <a class="" href="{{url_for('login_page')}}">Login</a>
+                        </div>
+                  </form>
+                </div>
+            </div>       
+          </div>
+        </div>
+
+  </div>
+<div class="row otp-row">    
+
+<div class="container height-100 d-flex justify-content-center align-items-center">
+    <div class="position-relative otp">
+        <div class="card p-2 text-center">
+                <div id="otp" class="inputs d-flex flex-row justify-content-center mt-2"> <input class="m-2 text-center form-control rounded" type="text" id="first" maxlength="1" /> <input class="m-2 text-center form-control rounded" type="text" id="second" maxlength="1" /> <input class="m-2 text-center form-control rounded" type="text" id="third" maxlength="1" /> <input class="m-2 text-center form-control rounded" type="text" id="fourth" maxlength="1" /> <input class="m-2 text-center form-control rounded" type="text" id="fifth" maxlength="1" /> <input class="m-2 text-center form-control rounded" type="text" id="sixth" maxlength="1" /> </div>
+            <div class="mt-4"> <button class="btn btn-danger px-4 validate">Validate</button> </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+        
+{% endblock %} 
